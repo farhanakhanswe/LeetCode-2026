@@ -48,5 +48,6 @@ class LinkedList{
 const list = new LinkedList();
 list.append(10);
 list.append(20);
+list.prepend(30);
 list.append(5);
 list.print();
