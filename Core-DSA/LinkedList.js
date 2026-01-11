@@ -43,6 +43,28 @@ class LinkedList{
         }
         console.log(result.join(" -> "));
     }
+
+    delete(value) {
+    if (!this.head) return;
+        
+    if (this.head.value === value) {
+        this.head = this.head.next;
+        this.size--;
+        return;
+    }
+
+    let current = this.head;
+
+    while (current.next && current.next.value !== value) {
+        current = current.next;
+    }
+
+    // If value was found
+    if (current.next) {
+        current.next = current.next.next;
+        this.size--;
+    }
+}
 }
 
 const list = new LinkedList();
@@ -50,4 +72,6 @@ list.append(10);
 list.append(20);
 list.prepend(30);
 list.append(5);
+list.print();
+list.delete(20);
 list.print();
