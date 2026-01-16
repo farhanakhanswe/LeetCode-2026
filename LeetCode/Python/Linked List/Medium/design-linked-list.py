@@ -1,5 +1,10 @@
 # Question Link: https://leetcode.com/problems/design-linked-list/
 
+class Node(object):
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
 class MyLinkedList(object):
 
     def __init__(self):
@@ -56,7 +61,7 @@ class MyLinkedList(object):
         curr = self.head
         for _ in range(index):
             curr = curr.next
-        node Node(val)
+        node = Node(val)
         node.next = curr.next
         curr.next = node
         self.size += 1
@@ -67,6 +72,14 @@ class MyLinkedList(object):
         :type index: int
         :rtype: None
         """
+
+        if index < 0 or index >= self.size:
+            return
+        curr = self.head
+        for _ in range(index):
+            curr = curr.next
+        curr.next = curr.next.next
+        self.size -= 1
         
 
 
