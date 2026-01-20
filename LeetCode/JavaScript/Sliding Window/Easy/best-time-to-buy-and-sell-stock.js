@@ -1,22 +1,22 @@
 /**
- * INCORRECT SOLUTION
+   Question Link: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
  * @param {number[]} prices
  * @return {number}
  */
 var maxProfit = function (prices) {
-    let earning = 0;
-    let smallestNum = 7;
+    let left = 0;
+    let right = 1;
+    let maxProfit = 0;
 
-    for (let i = 1; i < prices.length; i++) {
-        if (prices[i] < smallestNum) {
-            smallestNum = prices[i];
-            earning = 0;
+    while (right < prices.length) {
+        if (prices[right] > prices[left]) {
+            let profit = prices[right] - prices[left];
+            maxProfit = Math.max(maxProfit, profit);
         } else {
-            earning = Math.max(prices[i], earning);
+            left = right;
         }
+        right++;
     }
 
-    const maxProfit = earning - smallestNum;
-
-    return maxProfit > 0 ? maxProfit : 0;
+    return maxProfit;
 };
