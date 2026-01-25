@@ -2,7 +2,7 @@
 	(A) Easy
 		(i)   https://leetcode.com/problems/contains-duplicate/
 		(ii)  https://leetcode.com/problems/two-sum/
-		(iii) https://leetcode.com/problems/valid-anagram/ (NOT SOLVED)
+		(iii) https://leetcode.com/problems/valid-anagram/
 
 	(B) Medium
 		(i)   https://leetcode.com/problems/maximum-subarray/ (NOT SOLVED)
