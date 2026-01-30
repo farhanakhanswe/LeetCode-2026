@@ -1,7 +1,24 @@
 /**
+ * Question Link: https://leetcode.com/problems/single-number/
  * @param {number[]} nums
  * @return {number}
  */
+
+
+/* Solution 2 */
+
+var singleNumber = function (nums) {
+    let result = 0;
+
+    for (let num of nums) {
+        result ^= num;
+    }
+
+    return result;
+};
+
+
+/* Solution 1 */
 var singleNumber = function (nums) {
     // non-empty array of integers nums
     // every integer appears twice except for one
