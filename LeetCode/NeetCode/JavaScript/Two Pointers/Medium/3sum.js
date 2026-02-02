@@ -26,4 +26,23 @@ var threeSum = function (nums) {
     // j cannot be k
     // that means i cannot be j or k, j cannot be i or k, k cannot be i or j
     // basically meaning all three elements in the triplet have to have unique indices
+
+    // Solution 1: Brute force soln
+
+    const tripletSet = new Set();
+    const numLen = nums.length;
+
+    for (let i = 0; i < numLen; i++) {
+        for (let j = i + 1; j < numLen; j++) {
+            for (let k = j + 1; k < numLen; k++) {
+                if (nums[i] + nums[j] + nums[k] === 0) {
+                    let triplet = [nums[i], nums[j], nums[k]].sort((a, b) => a - b);
+                    tripletSet.add(triplet.toString());
+                }
+            }
+        }
+    }
+
+    return Array.from(tripletSet).map(t => t.split(',').map(Number));
+
 };
