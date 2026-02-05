@@ -11,6 +11,13 @@
  * @param {ListNode} head
  * @return {ListNode}
  */
+
+/* 
+    Solution 1: 
+    Time Complexity: O(n)
+    Space: O(1)
+*/
+
 var reverseList = function(head) {
     let prev = null;
     let curr = head;
@@ -23,4 +30,23 @@ var reverseList = function(head) {
     }
 
     return prev;
+};
+
+
+/* 
+    Solution 2: Using Recursion
+    Time Complexity: O(n)
+    Space: O(n)
+*/
+
+var reverseList = function (head) {
+    if (head === null || head.next === null) {
+        return head;
+    }
+
+    const newHead = reverseList(head.next);
+    head.next.next = head;
+    head.next = null;
+
+    return newHead;
 };
