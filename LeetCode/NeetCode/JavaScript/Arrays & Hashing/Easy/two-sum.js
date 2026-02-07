@@ -5,11 +5,16 @@
  * @return {number[]}
  */
 
-/* Solution 1: */
+/* Solution 1: HashMap Approach */
 var twoSum = function(nums, target) {
     if(nums.length < 2) return [1,-1];
 
     const numsMap = new Map();
+
+    // we store the num as key and the index of it as value in the map as we iterate over the array given conditions met
+    // for each iteration we find the difference between the curr el and the target
+    // we then check if this difference exists in the map as a key
+    // if it does then we have our answer, we return the indices for both the elements
 
     for(let i = 0 ; i < nums.length; i++){
         let diff = target - nums[i];
@@ -24,7 +29,7 @@ var twoSum = function(nums, target) {
     return [-1, -1];
 };
 
-/* Solution 2: */
+/* Solution 2: Two Pointer Approach */
 
 /**
  * @param {number[]} nums
