@@ -31,5 +31,5 @@
                                          data.join('-');
 
 
-(3) You can remove char from a string using slice. Function: string.slice(start,end) . Start is included and End is excluded; the function return a new string without
+(3) You can remove character from a string using slice. Function: string.slice(start,end). Start is included and End is excluded; the function returns a new string without
     modifying the original string. 
