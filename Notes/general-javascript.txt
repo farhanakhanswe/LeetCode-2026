@@ -1,0 +1,35 @@
+(1) Convert string to array of substrings using split(separator, limit) where seperator and limit params are optional.
+    Some examples:
+
+        Scenario                ||  Code Example                       || Resulting Array
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    (1) No separator            -> 'Hello World'.split()               -> ['Hello World'] (Array with the original string as a single element)
+    (2) Space separator         -> 'Hello World'.split(' ')            -> ['Hello', 'World']
+    (3) Comma separator         -> 'Jan,Feb,Mar'.split(',')            -> ['Jan', 'Feb', 'Mar']
+    (4) Empty string separator  -> 'JavaScript'.split('')              -> ['J', 'a', 'v', 'a', 'S', 'c', 'r', 'i', 'p', 't'] (Each character is an element)
+    (5) With a limit            -> 'Oh brave new world'.split(' ', 3)  -> ['Oh', 'brave', 'new'] (Only the first three elements)
+    (6) Separator not found     -> 'paxdiablo'.split('.')              -> ['paxdiablo'] (Array with the original string as a single element)
+    (7) Using a RegExp          -> 'Hello 1 word'.split(/(\d)/)        -> ['Hello ', '1', ' word']
+
+(2) Convert array to string using array.join(separator) where seperator is optional.
+
+        Scenario                      ||  Code Example                                    || Resulting String
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    (1) Default separator (comma)     -> const elements = ["Wind", "Water", "Fire"];      -> 'Wind,Water,Fire'
+                                         elements.join();
+
+    (2) Custom separator (space)      -> const words = ["Hello", "world"];                -> 'Hello world'
+                                         words.join(' ');
+
+    (3) Custom separator (plus sign)  -> const items = ["item1", "item2", "item3"];       -> 'item1 + item2 + item3'
+                                         items.join(" + ");
+
+    (4) No separator (empty string)   -> const characters = ['J', 'S', 'P'];              -> 'JSP'
+                                         characters.join('');
+
+    (5) Handling null and undefined:  -> const data = [1, undefined, 3, null, 5];         -> '1--3--5'
+                                         data.join('-');
+
+
+(3) You can remove char from a string using slice. Function: string.slice(start,end) . Start is included and End is excluded; the function return a new string without
+    modifying the original string. 
