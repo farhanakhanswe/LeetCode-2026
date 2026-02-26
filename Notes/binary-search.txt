@@ -1,0 +1,21 @@
+(1) What is Binary Search?
+
+Binary Search is an efficient algorithm used to find the position of a target value in a sorted array/list.
+
+Works only on sorted data
+
+Uses a divide-and-conquer approach
+
+Much faster than linear search for large datasets
+
+(2) How It Works (Step-by-Step)
+
+Find the middle element of the array.
+
+Compare the middle element with the target:
+
+If equal → Found
+
+If target < middle → Search left half
+
+If target > middle → Search right half
