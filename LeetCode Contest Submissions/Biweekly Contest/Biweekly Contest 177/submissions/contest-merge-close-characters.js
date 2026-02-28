@@ -1,5 +1,5 @@
 // Question Link: https://leetcode.com/problems/merge-close-characters/description/
-// The following solution was submitted during the contest period.
+// The following solution was submitted during the contest period. It is not correct.
 
 /**
  * @param {string} s
