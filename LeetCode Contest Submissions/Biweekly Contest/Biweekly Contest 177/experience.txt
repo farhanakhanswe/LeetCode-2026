@@ -1,0 +1,18 @@
+Link: https://leetcode.com/contest/biweekly-contest-176/
+
+I was only able to answer one easy problem. I attempted a medium problem but couldn't finish it on time.
+
+Here's the problem list:
+
+-- Easy --
+
+(1) (SOLVED) https://leetcode.com/problems/smallest-pair-with-different-frequencies/description/
+
+-- Medium --
+
+(1) (ATTEMPTED) https://leetcode.com/problems/merge-close-characters/description/
+(2) https://leetcode.com/problems/minimum-operations-to-make-array-parity-alternating/description/
+
+-- Hard --
+
+(1) https://leetcode.com/problems/sum-of-k-digit-numbers-in-a-range/description/
