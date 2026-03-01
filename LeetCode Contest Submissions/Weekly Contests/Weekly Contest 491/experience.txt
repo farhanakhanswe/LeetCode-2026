@@ -1,0 +1,20 @@
+Link: https://leetcode.com/contest/weekly-contest-491/
+
+I only managed to solve an easy problem. I attempted a medium problem but couldn't prepare a solution for it on time.
+
+Contest Ranking: 24632
+
+Here's the problem list:
+
+-- Easy --
+
+(1) (SOLVED) https://leetcode.com/problems/trim-trailing-vowels/
+
+-- Medium --
+
+(1) (ATTEMPTED) https://leetcode.com/problems/minimum-cost-to-split-into-ones/
+(2) https://leetcode.com/problems/minimum-bitwise-or-from-grid/
+
+-- Hard --
+
+(1) https://leetcode.com/problems/count-subarrays-with-k-distinct-integers/
