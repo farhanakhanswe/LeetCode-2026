@@ -1,0 +1,11 @@
+(1) In simple words, recursion is when a function calls itself until a stopping condition is met.
+
+(2) Every recursive function needs 2 important parts:
+
+    (a) Base Case (Stopping Rule)
+        This tells the function when to stop.
+
+    (b) Recursive Case
+        This is where the function calls itself.
+
+    Without a base case, it would run forever (like infinite mirrors).
