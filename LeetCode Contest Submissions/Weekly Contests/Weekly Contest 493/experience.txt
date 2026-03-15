@@ -1,0 +1,20 @@
+Link: https://leetcode.com/contest/weekly-contest-493/
+
+I attempted an easy problem but couldn't solve it on time. Need to work on pattern recognition.
+
+Contest Ranking: 
+
+Here's the problem list:
+
+-- Easy --
+
+(1) (ATTEMPTED) https://leetcode.com/problems/count-commas-in-range/
+
+-- Medium --
+
+(1) https://leetcode.com/problems/count-commas-in-range-ii/
+(2) https://leetcode.com/problems/longest-arithmetic-sequence-after-changing-at-most-one-element/
+
+-- Hard --
+
+(1) https://leetcode.com/problems/maximum-points-activated-with-one-addition/
