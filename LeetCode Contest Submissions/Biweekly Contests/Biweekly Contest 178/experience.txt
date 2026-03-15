@@ -1,0 +1,20 @@
+Link: https://leetcode.com/contest/biweekly-contest-178/
+
+I was only able to solve one easy problem. I attempted a medium problem but couldn't solve it on time.
+
+Contest Ranking: 21023
+
+Here's the problem list:
+
+-- Easy --
+
+(1) https://leetcode.com/problems/first-unique-even-element/description/
+
+-- Medium --
+
+(1) https://leetcode.com/problems/sum-of-gcd-of-formed-pairs/description/
+(2) https://leetcode.com/problems/minimum-cost-to-equalize-arrays-using-swaps/
+
+-- Hard --
+
+(1) https://leetcode.com/problems/count-fancy-numbers-in-a-range/
