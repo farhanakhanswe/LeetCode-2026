@@ -1,0 +1,20 @@
+Link: https://leetcode.com/contest/weekly-contest-494/
+
+I only attempted the easy problem, but I couldn't solve it in time.
+
+Contest Ranking: 28791
+
+Here's the problem list:
+
+-- Easy --
+
+(1) (ATTEMPTED) https://leetcode.com/problems/construct-uniform-parity-array-i/
+
+-- Medium --
+
+(1) https://leetcode.com/problems/construct-uniform-parity-array-ii/
+(2) https://leetcode.com/problems/minimum-removals-to-achieve-target-xor/
+
+-- Hard --
+
+(1) https://leetcode.com/problems/count-good-subarrays/
