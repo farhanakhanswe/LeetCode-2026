@@ -3,6 +3,45 @@
  * @param {number[]} nums
  * @return {number[]}
  */
+// Solution 2 in progress:
+
+var productExceptSelf = function (nums) {
+
+    // let's try to solve this with Time Complexity O(n) and Space Complexity O(1)
+    // we can divide the soln in two parts: prefix and suffix
+    // and create an array called "answer" of the same size as nums and initialize the values of each el as 1 to help with multiplication
+    // in the prefix part, we use a for loop to keep track of the product of all elements to the left of the current element and add the product in the answer array at the same index as the curr el index 
+    // now the answer array contains product of the all the left elements before every element in nums
+
+    // in the suffix part, we traverse through the nums in reverse order using for loop
+    // the ith index in answer[i] refers to the ith index in nums[i]
+    // so we will multiply the product of all elements to the right of the current element in nums and
+    // multiply that product with the ith indexed element in answer array 
+
+    // through this process answer[i] = product of all elements to the left of nums[i] * product of all elements to the right of nums[i]
+
+    let answer = new Array.size(nums.length).fill(1);
+    let output = 1;
+
+    // prefix part
+
+    for (let i = 0; i < nums.length; i++) {
+        answer[i] = output;
+        output *= nums[i];
+    }
+
+    // suffix part
+    output = 1;
+
+    for (let i = nums.length - 1; i >= 0; i--) {
+        answer[i] *= output;
+        output *= nums[i];
+    }
+
+    return answer;
+};
+
+
 
 // Solution 1: Time Complexity is O(n) and Space Complexity is O(n). I'll try to find a soln that'll make the space complexity O(1).
 var productExceptSelf = function (nums) {
