@@ -3,7 +3,7 @@
  * @param {number[]} nums
  * @return {number[]}
  */
-// Solution 2 in progress:
+// Solution 2: Time Complexity is O(n) and Space Complexity is O(1) if we do not consider the output array but if we do Space Complexity is O(n)
 
 var productExceptSelf = function (nums) {
 
@@ -20,7 +20,7 @@ var productExceptSelf = function (nums) {
 
     // through this process answer[i] = product of all elements to the left of nums[i] * product of all elements to the right of nums[i]
 
-    let answer = new Array.size(nums.length).fill(1);
+    let answer = new Array(nums.length).fill(1);
     let output = 1;
 
     // prefix part
@@ -42,8 +42,8 @@ var productExceptSelf = function (nums) {
 };
 
 
+// Solution 1: Time Complexity is O(n) and Space Complexity is O(n)
 
-// Solution 1: Time Complexity is O(n) and Space Complexity is O(n). I'll try to find a soln that'll make the space complexity O(1).
 var productExceptSelf = function (nums) {
     // lets say we traverse through the nums in a for loop
     // and we have already kept a track of the product of all the elements before and after the curr el
