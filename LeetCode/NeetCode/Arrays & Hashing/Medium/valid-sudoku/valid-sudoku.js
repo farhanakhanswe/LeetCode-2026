@@ -1,10 +1,10 @@
-// solution is in progress
-
 /**
  * Question Link: https://leetcode.com/problems/valid-sudoku/
  * @param {character[][]} board
  * @return {boolean}
  */
+
+// Solution 1: 
 var isValidSudoku = function (board) {
     // sudoku is a square of 9 boxes where each box has 3 X 3 grid boxes
 
@@ -89,13 +89,34 @@ var isValidSudoku = function (board) {
         map = new Map();
         i++;
     }
+
+    // checking 3x3 sub-boxes
+    
+    for (let boxRow = 0; boxRow < 3; boxRow++) {
+        for (let boxCol = 0; boxCol < 3; boxCol++) {
+
+            map = new Map();
+
+            for (let i = 0; i < 3; i++) {
+                for (let j = 0; j < 3; j++) {
+
+                    let val = board[boxRow * 3 + i][boxCol * 3 + j];
+
+                    if (val === ".") continue;
+
+                    if (map.has(val)) return false;
+
+                    if (numIsValid(val)) {
+                        map.set(val, 1);
+                    }
+                }
+            }
+        }
+    }
+
+    return true;
 };
 
 var numIsValid = function (num) {
-
-    if (num == "1" || num == "2" || num == "3" || num == "4" || num == "5" || num == "6" || num == "7" || num == "8" || num == "9") {
-        return true;
-    }
-
-    return false;
+    return num >= 1 && num <= 9;
 }
