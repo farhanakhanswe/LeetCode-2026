@@ -1,0 +1,35 @@
+# Parity (Even vs Odd)
+
+# Parity tells whether a number is:
+
+    (A) Even → divisible by 2
+    (B) Odd → not divisible by 2
+
+# Key Rules
+
+(1) Addition
+    
+    even + even = even
+    odd + odd = even
+    even + odd = odd
+
+(2) Subtraction
+    
+    even - even = even
+    odd - odd = even
+    even - odd = odd
+    odd - even = odd
+
+(3) Quick Trick to Remember
+    
+    Same parity → even result
+    Different parity → odd result
+
+(4) Code Check
+    
+    num % 2 === 0  // even
+    num % 2 !== 0  // odd
+
+(5) One-line summary
+
+    Parity only depends on whether numbers are even or odd—not their actual value.
