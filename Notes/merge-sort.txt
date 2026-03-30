@@ -1,0 +1,62 @@
+(1) Merge Sort is a classic sorting algorithm based on the divide-and-conquer strategy. It's known for being 
+    efficient and stable, especially for large datasets.
+
+(2) How Merge Sort Works:
+    
+    Merge sort breaks the problem into smaller pieces, sorts them, and then combines them:
+
+    (A) Divide: Split the array into two halves repeatedly until each subarray has only one element.
+
+    (B) Conquer: A single-element array is already sorted.
+
+    (C) Merge: Combine (merge) the sorted subarrays into a single sorted array.
+
+(3) Example
+
+    Suppose we sort this list:
+
+    [38, 27, 43, 3, 9, 82, 10]
+
+    Step-by-step:
+
+    Divide:
+
+    [38, 27, 43] and [3, 9, 82, 10]
+
+    Keep splitting until:
+
+    [38] [27] [43] [3] [9] [82] [10]
+
+    Merge:
+
+    [38] + [27] → [27, 38]
+    [27, 38] + [43] → [27, 38, 43]
+    [3] + [9] → [3, 9]
+    [82] + [10] → [10, 82]
+    [3, 9] + [10, 82] → [3, 9, 10, 82]
+
+    Final merge:
+
+    [27, 38, 43] + [3, 9, 10, 82] → [3, 9, 10, 27, 38, 43, 82]
+
+(4) Time and Space Complexity
+
+    Case	                    Time Complexity
+    Best Case	                O(n log n)
+    Average Case	            O(n log n)
+    Worst Case	                O(n log n)
+
+    Space Complexity: O(n) (needs extra memory for merging)
+
+(5) Key Properties
+
+    - Stable sort (keeps equal elements in order)
+    - Works well for large datasets
+    - Requires extra memory (not in-place)
+    - Predictable performance (always O(n log n))
+
+(6) When to Use Merge Sort?
+
+    - When you need stable sorting
+    - When working with linked list
+    - When handling large data that doesn't fit in memory (external sorting)
