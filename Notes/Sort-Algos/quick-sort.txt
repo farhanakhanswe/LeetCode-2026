@@ -1,0 +1,9 @@
+(A) Quick sort is a divide-and-conquer algorithm:
+
+        (1) Pick a pivot
+
+        (2) Partition the array:
+                Elements < pivot → left
+                Elements > pivot → right
+                
+        (3) Recursively sort left and right parts
