@@ -1,0 +1,28 @@
+(1) Insertion Sort is a simple sorting algorithm that builds the final sorted array one element at a time by inserting each element into its correct position.
+
+(2) How it works:
+
+    (A) Start from the second element.
+    (B) Compare it with the previous elements.
+    (C) Shift larger elements to the right.
+    (D) Insert the current element in the correct position.
+    (E) Repeat for all elements.
+
+(3) Time Complexity:
+
+    - Best Case: O(n) (already sorted)
+    - Average Case: O(n²)
+    - Worst Case: O(n²)
+
+(4) Space Complexity:
+    - O(1) (in-place sorting)
+
+(5) Key Features:
+
+    (A) Simple and easy to implement
+    (B) Stable sort (keeps equal elements in order)
+    (C) Efficient for small or nearly sorted data
+
+(6) Use Cases:
+    (A) Small datasets
+    (B) Nearly sorted arrays
