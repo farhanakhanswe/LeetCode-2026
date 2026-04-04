@@ -1,0 +1,91 @@
+(1) Sliding Window is an algorithmic technique used to reduce time complexity when working with arrays or strings.
+    Instead of recalculating values for every subarray or substring, it maintains a "window" that slides over the data.
+
+(2) When to Use Sliding Window
+
+    - You are working with arrays or strings
+    - The problem involves subarrays or substrings
+    - You need maximum, minimum, sum, or count
+    - The window size can be fixed or variable
+
+(3) Types of Sliding Window
+
+    (a) Fixed Size Window
+    
+        Window size k is constant
+        Always contains exactly k elements
+
+        Slide by:
+
+        Add the next element (right)
+        Remove the previous element (left)
+
+        Example: Find maximum sum of subarray of size k
+
+    (b) Variable Size Window
+    
+        Window size changes dynamically
+        Expand or shrink the window based on a condition
+        
+        Pattern:
+        Start with left = 0
+        Move right pointer to expand window
+        Shrink left pointer while condition is invalid
+        Update result
+
+        Example: Longest substring without repeating characters
+
+(4) Basic Idea
+
+    - Maintain a window using two pointers:
+    - Left pointer → start of the window
+    - Right pointer → end of the window
+    - Expand the window by moving the right pointer
+    - Shrink the window by moving the left pointer when needed
+    
+(5) Fixed Window Template
+
+    Steps:
+
+    Compute sum for the first window of size k
+    Slide the window:
+    Add next element
+    Remove previous element
+    Update result
+
+
+(6) Variable Window Template
+
+    Steps:
+
+    Initialize left = 0
+    Expand right pointer
+    While condition is invalid:
+    Shrink from left
+    Update answer
+
+(7) Common Problems
+
+    Maximum sum subarray of size k
+    Longest substring without repeating characters
+    Minimum window substring
+    Count of anagrams in a string
+    Longest substring with k distinct characters
+
+(8) Time Complexity
+
+    Usually: O(n)
+    Each element is processed at most twice
+
+(9) Advantages
+    
+    Reduces nested loops
+    Improves time complexity from O(n²) → O(n)
+    Efficient for large inputs
+
+(10) Key Tips
+
+    Always think in terms of a "window"
+    Decide when to expand or shrink
+    Use hash maps or sets for variable windows
+    Carefully handle edge cases
