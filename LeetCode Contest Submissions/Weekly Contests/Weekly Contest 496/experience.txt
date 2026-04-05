@@ -1,0 +1,17 @@
+Link: https://leetcode.com/contest/weekly-contest-496/
+
+I was only able to solve one medium problem in time.
+
+Contest Ranking: 20244
+
+Here's the problem list:
+
+-- Medium --
+
+(1) (SOLVED) https://leetcode.com/problems/mirror-frequency-distance/description/
+(2) https://leetcode.com/problems/integers-with-multiple-sum-of-two-cubes/description/
+(3) https://leetcode.com/problems/minimum-increase-to-maximize-special-indices/description/
+
+-- Hard --
+
+(1) https://leetcode.com/problems/minimum-increase-to-maximize-special-indices/description/
