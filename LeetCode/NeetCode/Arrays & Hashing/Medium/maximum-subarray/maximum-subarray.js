@@ -3,6 +3,26 @@
  * @param {number[]} nums
  * @return {number}
  */
+
+// Solution 1: Brute-force
+
+var maxSubArray = function (nums) {
+
+    let max = -Infinity;
+
+    for (let i = 0; i < nums.length; i++) {
+        let curr = 0;
+
+        for (let j = i; j < nums.length; j++) {
+            curr += nums[j];
+            max = Math.max(max, curr);
+        }
+    }
+
+    return max;
+};
+
+// Solution 2:
 var maxSubArray = function (nums) {
 
     if (nums.length < 1) return 0;
