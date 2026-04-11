@@ -1,0 +1,20 @@
+Link: https://leetcode.com/contest/biweekly-contest-180/
+
+I managed to solve one easy and one medium problem in time.
+
+Contest Ranking: 19954
+
+Here's the problem list:
+
+-- Easy --
+
+(1) https://leetcode.com/problems/traffic-signal-color/
+
+-- Medium --
+
+(1) https://leetcode.com/problems/count-digit-appearances/
+(2) https://leetcode.com/problems/minimum-operations-to-transform-array-into-alternating-prime/
+
+-- Hard --
+
+(1) https://leetcode.com/problems/maximum-value-of-concatenated-binary-segments/description/
