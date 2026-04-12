@@ -1,0 +1,20 @@
+Link: https://leetcode.com/contest/weekly-contest-497/
+
+I only attempted a medium problem but couldn't solve it in time.
+
+Contest Ranking: 19431
+
+Here's the problem list:
+
+-- Easy --
+
+(1) https://leetcode.com/problems/find-the-degree-of-each-vertex/description/
+
+-- Medium --
+
+(1) (ATTEMPTED) https://leetcode.com/problems/angles-of-a-triangle/description/
+(2) https://leetcode.com/problems/longest-balanced-substring-after-one-swap/description/
+
+-- Hard --
+
+(1) https://leetcode.com/problems/good-subsequence-queries/description/
