@@ -1,0 +1,20 @@
+Link: https://leetcode.com/contest/weekly-contest-498/
+
+I managed to only solve one easy and one medium problem during contest.
+
+Contest Ranking: 16031
+
+Here's the problem list:
+
+-- Easy --
+
+(1) https://leetcode.com/problems/smallest-stable-index-i/
+
+-- Medium --
+
+(1) https://leetcode.com/problems/smallest-stable-index-ii/
+(2) https://leetcode.com/problems/multi-source-flood-fill/description/
+
+-- Hard --
+
+(1) https://leetcode.com/problems/count-good-integers-on-a-grid-path/description/
