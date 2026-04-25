@@ -1,0 +1,20 @@
+Link: https://leetcode.com/contest/biweekly-contest-181/
+
+I only managed to solve one easy and one medium problem during contest period.
+
+Contest Ranking: 6233
+
+Here's the problem list:
+
+-- Easy --
+
+(1) https://leetcode.com/problems/valid-digit-number/
+
+-- Medium --
+
+(1) https://leetcode.com/problems/compare-sums-of-bitonic-parts/
+
+-- Hard --
+
+(1) https://leetcode.com/problems/count-connected-subgraphs-with-even-node-sum/description/
+(2) https://leetcode.com/problems/k-th-smallest-remaining-even-integer-in-subarray-queries/description/
