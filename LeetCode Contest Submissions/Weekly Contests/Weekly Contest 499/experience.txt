@@ -1,0 +1,20 @@
+Link: https://leetcode.com/contest/weekly-contest-499/
+
+I only managed to solve on easy problem during contest period.
+
+Contest Ranking: 17183
+
+Here's the problem list:
+
+-- Easy --
+
+(1) (SOLVED) https://leetcode.com/problems/valid-elements-in-an-array/
+
+-- Medium --
+
+(1) https://leetcode.com/problems/sort-vowels-by-frequency/description/
+(2) https://leetcode.com/problems/minimum-operations-to-make-array-non-decreasing/description/
+
+-- Hard --
+
+(1) https://leetcode.com/problems/maximum-sum-of-alternating-subsequence-with-distance-at-least-k/
