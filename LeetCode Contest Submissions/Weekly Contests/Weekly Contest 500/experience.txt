@@ -1,0 +1,20 @@
+Link: https://leetcode.com/contest/weekly-contest-500/
+
+I was only able to solve one easy problem during the contest period.
+
+Contest Ranking: 17520
+
+Here's the problem list:
+
+-- Easy --
+
+(1) https://leetcode.com/problems/count-indices-with-opposite-parity/ 
+
+-- Medium --
+
+(1) https://leetcode.com/problems/sum-of-primes-between-number-and-its-reverse/
+(2) https://leetcode.com/problems/minimum-cost-to-move-between-indices/
+
+-- Hard --
+
+(1) https://leetcode.com/problems/maximize-fixed-points-after-deletions/
