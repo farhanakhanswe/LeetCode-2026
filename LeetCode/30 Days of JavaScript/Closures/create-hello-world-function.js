@@ -35,7 +35,8 @@ var createHelloWorld = function () {
                 }
             };
 
-            This will give an error because we cannot place a var declaration inside a return statement.
+            This will throw an error because we cannot place a var declaration inside a return statement.
+            A return statement will expect an expression and not a statement.
 
         (b) After removing "var" right next to return
 
@@ -61,9 +62,15 @@ var createHelloWorld = function () {
 
             To combat these sort of mistakes, we can use strict mode because once this is on, assigning a value to an undeclared
             variable throws a ReferenceError.
-            In strict mode, we must declare variables using var or let or const in strict mode.
-        
+            In strict mode, we must declare variables using var or let or const.
 
+        (c) After removing the global variable anotherFunction,
+        
+            var createHelloWorld = function () {
+                return function () {
+                    return "Hello World";
+                }
+            };
     
 
 */
