@@ -16,7 +16,7 @@ var createHelloWorld = function () {
 /*
  * Notes:
 
-   (1) First, let's visualize two functions 
+   (1) First, let's visualize two functions: 
 
        var createHelloWorld = function(){
 
@@ -38,7 +38,7 @@ var createHelloWorld = function () {
             This will throw an error because we cannot place a var declaration inside a return statement.
             A return statement will expect an expression and not a statement.
 
-        (b) After removing "var" right next to return
+        (b) After removing "var" right next to return,
 
             var createHelloWorld = function () {
                 return anotherFunction = function () {
@@ -64,7 +64,15 @@ var createHelloWorld = function () {
             variable throws a ReferenceError.
             In strict mode, we must declare variables using var or let or const.
 
-        (c) After removing the global variable anotherFunction,
+            If we do not want to use an anonymous function for the inner function, and want to name the inner function, we can do so that like the following:
+
+            var createHelloWorld = function() {
+                return function anotherFunction(...args){
+                    return "Hello World";
+                }
+            };
+
+        (c) Final solution:
         
             var createHelloWorld = function () {
                 return function () {
