@@ -3,7 +3,7 @@
  * @return {Function}
  */
 var createHelloWorld = function () {
-    return function () {
+    return function (...args) {
         return "Hello World";
     }
 };
@@ -40,19 +40,9 @@ var createHelloWorld = function () {
 
         (b) After removing "var" right next to return,
 
+            // code starts
             var createHelloWorld = function () {
-                return anotherFunction = function () {
-                    return "Hello World";
-                }
-            };
-
-            In non-strict mode, this may accidentally create a global variable called anotherFunction. 
-            In this scenario, when we use an undeclared variable for storing functions, this variable becomes
-            available in the global scope.
-            This can lead to unwanted variable overrides or security issues.
-
-            var createHelloWorld = function () {
-                return anotherFunction = function () {
+                return anotherFunction = function (...args) {
                     return "Hello World";
                 }
             };
@@ -60,11 +50,24 @@ var createHelloWorld = function () {
             console.log(createHelloWorld()());
             console.log(anotherFunction()); // It will return value since anotherFunction has accidentally become a global variable
 
-            To combat these sort of mistakes, we can use strict mode because once this is on, assigning a value to an undeclared
-            variable throws a ReferenceError.
-            In strict mode, we must declare variables using var or let or const.
+            // code ends
 
-            If we do not want to use an anonymous function for the inner function, and want to name the inner function, we can do so that like the following:
+            In non-strict mode, this solution may accidentally create a global variable called anotherFunction. 
+            In this scenario, when we use an undeclared variable for storing functions, this variable becomes
+            available in the global scope. This can lead to unwanted variable overrides or security issues.
+
+            To combat these sort of mistakes, we can use strict mode because once this is on, assigning a value to an undeclared
+            variable throws a ReferenceError. In strict mode, we must declare variables using var or let or const.
+
+        (c) Using anonymous function for inner function
+
+            var createHelloWorld = function () {
+                return function (...args) {
+                    return "Hello World";
+                }
+            };
+
+            If we do not want to use an anonymous function for the inner function, and want to name the inner function, we can do the following:
 
             var createHelloWorld = function() {
                 return function anotherFunction(...args){
@@ -72,13 +75,15 @@ var createHelloWorld = function () {
                 }
             };
 
-        (c) Final solution:
+        (d) Rest parameter: The JavaScript rest parameter syntax (...) allows a function to accept an indefinite number of arguments as an array.
+            Here, we are using a rest parameter in the inner function but we are not using it for this question. 
         
+        (e) Final solution:
+
             var createHelloWorld = function () {
-                return function () {
+                return function (...args) {
                     return "Hello World";
                 }
             };
-    
 
 */
