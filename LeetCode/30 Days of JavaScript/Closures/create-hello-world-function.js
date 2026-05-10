@@ -76,7 +76,7 @@ var createHelloWorld = function () {
             };
 
         (d) Rest parameter: The JavaScript rest parameter syntax (...) allows a function to accept an indefinite number of arguments as an array.
-            Here, we are using a rest parameter in the inner function but we are not using it for this question. 
+            Here, we have a rest parameter in the inner function but we are not using it in our solution. 
         
         (e) Final solution:
 
