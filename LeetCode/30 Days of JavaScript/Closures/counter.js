@@ -1,5 +1,5 @@
 /**
- * Link: https://leetcode.com/problems/counter/?envType=study-plan-v2&envId=30-days-of-javascript
+ * Question Link: https://leetcode.com/problems/counter/?envType=study-plan-v2&envId=30-days-of-javascript
  * @param {number} n
  * @return {Function} counter
  */
@@ -7,15 +7,6 @@ var createCounter = function (n) {
     return function () {
         return n++;
     };
-
-    /*
-        The inner function is a closure so it remembers the last value assigned to n even after the parent function has stopped executing.
-        So, we can keep calling the same object again and again outside the createCounter() and it will keep incrementing the count as the inner function
-        remembers the last value so it just increments that and returns it.
-
-        FYI: n++ first prints the n value and then increments it which is why we get the "n" value first and not "n+1"
-
-    */
 };
 
 /** 
@@ -24,3 +15,17 @@ var createCounter = function (n) {
  * counter() // 11
  * counter() // 12
  */
+
+/*
+  Notes:
+
+  (1) Function parameters act like local variables. So, when we call the createCounter() and pass an int as argument,
+      we assign the local variable n that value.
+
+  (2) Closures have access to the local variables in the parent function and it remembers the last values assigned to 
+      them even after the parent function has stopped executing; which is why we can keep calling the createCounter() 
+      to increase the count.
+
+  (3) n++ first returns the value and then increments n by 1 which is why the first value returned is n and not n + 1.
+
+*/
