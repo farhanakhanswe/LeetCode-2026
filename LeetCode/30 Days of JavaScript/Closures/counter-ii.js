@@ -24,3 +24,10 @@ var createCounter = function (init) {
  * counter.reset(); // 5
  * counter.decrement(); // 4
  */
+
+/* 
+    Notes:
+
+    (1) We have to store the initial value of init in a variable so that we can later use it for resetting
+
+*/
