@@ -37,7 +37,6 @@ var createCounter = function (init) {
     (2) The returned object will contain three closures as properties and we can call each of these closures using the
         object's dot notation
         
-   
         const counter = createCounter(5)
         counter.increment(); // 6
         counter.reset(); // 5
