@@ -1,0 +1,20 @@
+Link: https://leetcode.com/contest/weekly-contest-502/
+
+I only solved one easy problem.
+
+Contest Ranking: 
+
+Here's the problem list:
+
+-- Easy --
+
+(1) (SOLVED) https://leetcode.com/problems/check-adjacent-digit-differences/
+
+-- Medium --
+
+(1) https://leetcode.com/problems/count-k-th-roots-in-a-range/
+(2) https://leetcode.com/problems/largest-local-values-in-a-matrix-ii/
+
+-- Hard --
+
+(1) https://leetcode.com/problems/smallest-unique-subarray/description/
