@@ -2,16 +2,18 @@
 
 This repository documents my year long journey in 2026 of problem solving in multiple languages.
 
-Currently, my LeetCode rank is: 1,176,604, Contest Rating: 1,357 & I'm
+Currently, my LeetCode rank is: 962,015, Contest Rating: 1,350 & I'm
 
 (1) Solving NeetCode250 which is a list of categorized questions that are also found on LeetCode. 
 
 Link to NeetCode250: https://neetcode.io/practice/practice/neetcode250
 
-(2) Participating in coding contests
+(2) Participating in coding contests.
 
 Filename starting with "contest" is the question answered during coding contests.
 
 My goal for 2026 is participate in atleast 100 contests; not to win, but to improve my problem-solving skills.
 
-(3) Solving LeetCode Quests
+(3) Solving LeetCode Quests.
+
+(4) Solving LeetCode Study Plans.
